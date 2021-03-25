@@ -12,16 +12,25 @@
     </style>
 </head>
 <body>
-    <h1>FOR loop</h1>
+    <h1>WHILE loop</h1>
     <hr>
     <script>
-        var webcon =['Sloba', 'Danilo', 'Srdjan', 'Boban'];
-        for (var i = 0; i < webcon.length; i++) {
-            console.log(webcon[i]);
+        var mojaVar = 0;
+        while (mojaVar < 10) {
+            console.log('While radi ' + mojaVar);
+            mojaVar++;
         }
 
-        for (var broj = 0; broj <= 10; broj = broj + 2) {
+        var novaVar = 9;
+        do {
+            novaVar++;
+        } while (novaVar > 200);
+        console.log('Kranjnja vrednost je ' + novaVar);
+
+        var broj = 0;
+        while (broj <= 10) {
             console.log(broj);
+            broj = broj + 2;
         }
     </script>
 </body>

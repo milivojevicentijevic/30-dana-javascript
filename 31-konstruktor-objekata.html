@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+</head>
+<body>
+    <h1>Konstruktor objekata</h1>
+    <hr>
+    <script>
+        // konstruktor objekata
+        function NekaFirma() {
+            // const this = {};  // podrazumeva se, ne moramo da pisemo
+            this.ime ='Slobodan';
+            this.pozicija = 'WP dev';
+            // return this;
+        }
+        let designer = new NekaFirma();
+        console.log(designer);
+        console.log(designer instanceof NekaFirma);
+        // ali ni ovo nije pravi nacin
+    </script>
+</body>
+</html>

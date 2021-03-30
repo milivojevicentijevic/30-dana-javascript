@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+</head>
+<body>
+    <h1>Loops</h1>
+    <hr>
+    <script>
+        let radionice = ['30 dana kodiranja', 'Custom WP teme', 'Themify'];
+        for (let i = 0; i < radionice.length; i++) {
+            console.log(radionice[i]);
+        }
+        radionice.forEach((radionice => {
+            console.log(radionice);   /// dobijemo isto
+        }))  
+        radionice.forEach(radionice => console.log(radionice)); /// isto se dobije!
+
+        for (const i of radionice) {
+            console.log(i);   /// isto!
+        }
+
+        // map metoda
+        const velikaSlova = radionice.map( i => {
+            return i.toUpperCase();
+        })
+        console.log(velikaSlova);
+
+        const zaposleni = [
+            {
+                ime: 'Slobodan',
+                pozicija: 'WPDev'
+            },
+            {
+                ime: 'Dejan',
+                pozicija: 'FEDev'
+            },
+            {
+                ime: 'Srdjan',
+                pozicija: 'BEDev'
+            },
+            {
+                ime: 'Svetlana',
+                pozicija: 'FEDev'
+            },
+        ];
+        const feDev = zaposleni.filter(zaposleni => zaposleni.pozicija == 'FEDev');
+        console.log(feDev);
+
+    </script>
+</body>
+</html>

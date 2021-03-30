@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+    <style>
+        div {
+            width: 400px;
+            height: 150px;
+            border: 1px solid black;
+            background-color: #ddd;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Arrow funkcije</h1>
+    <hr>
+    <script>
+        // function statement
+        function statement() {
+            console.log('Function statement');
+        }
+        statement();
+        // function expression
+        let expression = function() {
+            console.log('I ova funkcija nam radi');
+        }
+        expression();
+        // metode - funkcije unutar objekata
+        const zaposleni = {
+            pozicija: function() {
+                console.log('Front end developer');
+            }
+        };
+        zaposleni.pozicija();
+        // Arrow funkcije
+        const strelice = () => {
+            console.log('Ja sam arrow funkcija');
+        }
+        strelice();
+
+        // nova funkcija
+        const frontEndDeveloper = (ime) => {
+            console.log(`Na poziciji front endera radi ${ime}`);
+        }
+        frontEndDeveloper('Sloba');
+        // jos jedna funkcija ( ako je samo jedan argument u pitanju)
+        const backEndDeveloper = ime => console.log(`Na poziciji back endera radi ${ime}`);
+        backEndDeveloper('Dejan');
+    </script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery</title>
+    <style>
+        body {
+            font-size: 22px;
+            font-family: sans-serif;
+            background-image: url(bg.png);
+            background-repeat: repeat;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            line-height: 1.2;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            background-color: white;
+            border: 2px solid black;
+            border-radius: 10px;
+            padding: 30px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>TRAVERSING</h1>
+        <hr>
+        <h2>Prvi primer</h2>
+        <ul>
+            <li>Clan liste 1</li>
+            <li>Clan liste 2</li>
+            <li class="izdvojen">Clan liste 3</li>
+            <li>Clan liste 4</li>
+        </ul>
+        <h2>Drugi primer</h2>
+        <ol>
+            <li>Clan liste 1</li>
+            <li class="izdvojen">Clan liste 2</li>
+            <li>Clan liste 3</li>
+            <li>Clan liste 4</li>
+        </ol>
+    </div>
+    <script src="jquery.js"></script>
+    <script>
+        // $('li').css({
+        //     'color': 'red',
+        //     'textShadow' : '0 0 2px black'
+        // });
+        // $('li').filter('.izdvojen').css({
+        //     'backgroundColor' : 'black',
+        //     'color' : 'white'
+        // });
+        // $('li').not('.izdvojen').css({
+        //     'backgroundColor' : 'yellow',
+        //     'color' : 'purple',
+        //     'textAlign' : 'center'
+        // });
+        // $('ul').find('li').css('color', 'green');
+        // $('ol').find('li').css('color', 'blue');
+        // $('.izdvojen').next().css('backgroundColor','red');
+        // $('.izdvojen').prev().css('backgroundColor','orange');
+
+        $('ol').children().css({
+            'backgroundColor' : 'yellow',
+            'border' : '1px solid black'
+        });
+        $('li').parent().css({
+            'backgroundColor' : 'aqua',
+            'border' : '1px solid black'
+        });
+    </script>
+</body>
+</html>

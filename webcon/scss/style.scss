@@ -13,6 +13,9 @@ $paddingY: 100px 0;
     margin: 0;
     padding: 0;
 }
+html {
+    scroll-behavior: smooth;
+}
 body {
     font-family: $fontFamily;
     color: $primary;
@@ -116,6 +119,37 @@ onama
         margin-right: 20px;
         &:hover {
             color: $accents;
+        }
+    }
+}
+/******************
+program
+******************/
+#program {
+    padding: $paddingY;
+    background-color: rgba($accents, .8);
+    .card {
+        background-color: $black;
+        padding: 30px;
+        margin-bottom: 30px;
+        transition: $transition;
+        i {
+            color: $accents;
+            font-size: 3rem;
+        }
+        h3 {
+            font-size: 1.5rem;
+            &::after {
+                display: block;
+                content: "";
+                height: 2px;
+                background-color: $accents;
+                width: 50px;
+                margin: 20px auto;
+            }
+        }
+        &:hover {
+            background-color: $primary;
         }
     }
 }

@@ -19,7 +19,7 @@ html {
 body {
     font-family: $fontFamily;
     color: $primary;
-    background-image:linear-gradient(rgba($black, .8), rgba($black, .8)), url(../img/bg.jpg);
+    background-image:linear-gradient(rgba($black, .87), rgba($black, .87)), url(../img/bg.jpg);
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
@@ -151,5 +151,14 @@ program
         &:hover {
             background-color: $primary;
         }
+    }
+}
+/******************
+program
+******************/
+#iskustvo {
+    padding: $paddingY;
+    .progress-bar {
+        background-color: $accents; 
     }
 }

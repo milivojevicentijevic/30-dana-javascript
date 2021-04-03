@@ -185,3 +185,22 @@ kontakt
     padding: $paddingY;
     background-color: rgba($accents, .8);
 }
+/******************
+prijava
+******************/
+#prijava {
+    padding: $paddingY;
+}
+/******************
+footer
+******************/
+footer {
+    background-color: rgba($accents, .8);
+    a {
+        color: $white;
+        margin: 0 10px;
+        &:hover {
+            color: $primary;
+        }
+    }
+}

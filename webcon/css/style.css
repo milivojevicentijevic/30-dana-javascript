@@ -187,4 +187,25 @@ kontakt
   background-color: rgba(2, 190, 206, 0.8);
 }
 
+/******************
+prijava
+******************/
+#prijava {
+  padding: 100px 0;
+}
+
+/******************
+footer
+******************/
+footer {
+  background-color: rgba(2, 190, 206, 0.8);
+}
+footer a {
+  color: #fff;
+  margin: 0 10px;
+}
+footer a:hover {
+  color: #1e242b;
+}
+
 /*# sourceMappingURL=style.css.map */

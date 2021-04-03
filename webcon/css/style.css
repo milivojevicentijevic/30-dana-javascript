@@ -18,6 +18,10 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Montserrat", sans-serif;
 }
 
+a {
+  transition: 0.3s ease;
+}
+
 .button {
   background: transparent;
   border: 2px solid #fff;
@@ -34,12 +38,27 @@ h1, h2, h3, h4, h5, h6 {
   color: #1e242b;
   background-color: #fff;
   text-decoration: none;
-  transition: 0.3s ease;
 }
 
 /******************
 nav
 ******************/
+nav.stickyAdd {
+  transition: 0.3s ease;
+  background-color: rgba(2, 190, 206, 0.9);
+  padding: 15px;
+  box-shadow: 0 5px 10px 5px rgba(0, 0, 0, 0.1);
+}
+nav.stickyAdd .navbar-brand {
+  color: #fff;
+  text-shadow: 0 0 1px #000;
+}
+nav.stickyAdd .navbar-brand:hover {
+  color: #1e242b;
+}
+nav.stickyAdd .nav-link:hover {
+  color: #1e242b;
+}
 nav .navbar-brand {
   color: #02bece;
   text-transform: uppercase;
@@ -47,10 +66,16 @@ nav .navbar-brand {
   font-weight: 700;
   font-size: 2.5rem;
 }
+nav .navbar-brand:hover {
+  color: #fff;
+}
 nav .nav-link {
   color: #fff;
   text-transform: uppercase;
   letter-spacing: 1px;
+}
+nav .nav-link:hover {
+  color: #02bece;
 }
 
 /******************
@@ -85,7 +110,6 @@ onama
   color: #fff;
   font-size: 2rem;
   margin-right: 20px;
-  transition: 0.3s ease;
 }
 #onama a:hover {
   color: #02bece;

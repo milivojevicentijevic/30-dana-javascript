@@ -25,6 +25,9 @@ body {
 h1, h2, h3, h4, h5, h6 {
     font-family: $headings;
 }
+a {
+    transition: $transition;
+}
 .button {
     background: transparent;
     border: 2px solid $white;
@@ -40,24 +43,45 @@ h1, h2, h3, h4, h5, h6 {
         color: $primary;
         background-color: $white;
         text-decoration: none;
-        transition: $transition;
     }
 }
 /******************
 nav
 ******************/
 nav {
+    &.stickyAdd {
+        transition: $transition;
+        background-color: rgba($accents, .9);
+        padding: 15px;
+        box-shadow: 0 5px 10px 5px rgba($black, .1);
+        .navbar-brand {
+            color: $white;
+            text-shadow: 0 0 1px $black;
+            &:hover {
+                color: $primary;
+            }
+        }
+        .nav-link:hover {
+            color: $primary;
+        }
+    }
     .navbar-brand {
         color: $accents;
         text-transform: uppercase;
         letter-spacing: 2px;
         font-weight: 700;
         font-size: 2.5rem;
+        &:hover {
+            color: $white;
+        }
     }
     .nav-link {
         color: $white;
         text-transform: uppercase;
         letter-spacing: 1px;
+        &:hover {
+            color: $accents;
+        }
     }
 }
 /******************
@@ -90,7 +114,6 @@ onama
         color: $white;
         font-size: 2rem;
         margin-right: 20px;
-        transition: $transition;
         &:hover {
             color: $accents;
         }

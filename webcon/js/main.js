@@ -27,4 +27,24 @@ var waypoint = new Waypoint({
         progress[3].setAttribute("style","width: 90%; transition-duration: 4s;")
     },
     offset: '90%'
-  })
+})
+// owl slider
+$('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:100,
+    //nav:true,
+    autoplay: true,
+    autoplayTimeout: 3000,
+    autoplaySpeed: 1500,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:3
+        },
+        1000:{
+            items:4
+        }
+    }
+})

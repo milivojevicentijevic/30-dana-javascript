@@ -154,11 +154,18 @@ program
     }
 }
 /******************
-program
+iskustvo
 ******************/
 #iskustvo {
     padding: $paddingY;
     .progress-bar {
         background-color: $accents; 
     }
+}
+/******************
+tehnologije
+******************/
+#tehnologije {
+    padding: $paddingY;
+    background-color: rgba($accents, .8);
 }

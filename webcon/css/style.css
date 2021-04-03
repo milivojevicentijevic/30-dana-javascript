@@ -169,4 +169,14 @@ tehnologije
   background-color: rgba(2, 190, 206, 0.8);
 }
 
+/******************
+radionice
+******************/
+#radionice {
+  padding: 100px 0;
+}
+#radionice img {
+  margin: 30px 0;
+}
+
 /*# sourceMappingURL=style.css.map */

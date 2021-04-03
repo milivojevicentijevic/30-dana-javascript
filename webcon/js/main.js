@@ -47,4 +47,8 @@ $('.owl-carousel').owlCarousel({
             items:4
         }
     }
-})
+});
+// radionice filterizr
+var filterizr = $('.filter-container').filterizr({
+    animationDuration: .5
+});

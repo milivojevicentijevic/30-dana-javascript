@@ -75,4 +75,20 @@ header
   font-size: 1.7rem;
 }
 
+/******************
+onama
+******************/
+#onama {
+  padding: 100px 0;
+}
+#onama a {
+  color: #fff;
+  font-size: 2rem;
+  margin-right: 20px;
+  transition: 0.3s ease;
+}
+#onama a:hover {
+  color: #02bece;
+}
+
 /*# sourceMappingURL=style.css.map */

@@ -81,3 +81,18 @@ header
         }
     }
 }
+/******************
+onama
+******************/
+#onama {
+    padding: $paddingY;
+    a {
+        color: $white;
+        font-size: 2rem;
+        margin-right: 20px;
+        transition: $transition;
+        &:hover {
+            color: $accents;
+        }
+    }
+}

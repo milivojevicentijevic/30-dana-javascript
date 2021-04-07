@@ -69,6 +69,7 @@ nav
     justify-content: space-between;
     padding: 25px 100px;
     position: fixed;
+    z-index: 1;
     width: 100%;
 }
 .logo, .nav-link, a {

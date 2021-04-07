@@ -191,3 +191,33 @@ portfolio
     font-size: 1.5rem;
     margin-bottom: 15px;
 }
+/**********************
+kontakt
+**********************/
+#kontakt {
+    padding: var(--padding);
+}
+form {
+    width: 40%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+input {
+    flex: 0 0 49%;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 1rem;
+}
+textarea {
+    flex: 0 0 100%;
+    padding: 10px;
+}
+#kontakt .btn {
+    flex: 0 0 100%;
+    background-color: var(--plava);
+}
+#kontakt .btn:hover {
+    background-color: var(--crvena);
+}

@@ -10,11 +10,18 @@
     --bodyFont: 'Montserrat', sans-serif;
     --fontSize: 16px;
     --headings: 'Source Code Pro', monospace;
+    --padding: 4rem 0;
 }
+/**********************
+basic styles
+**********************/
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
+html {
+    scroll-behavior: smooth;
 }
 body {
     font-family: var(--bodyFont);
@@ -48,6 +55,11 @@ ul {
 }
 .btn:hover {
     background: var(--plava);
+}
+h2 {
+    text-align: center;
+    font-size: 3rem;
+    padding-bottom: 40px;
 }
 /**********************
 nav
@@ -117,12 +129,7 @@ header {
 services
 **********************/
 .services {
-    padding: 4rem 0;
-}
-.services h2 {
-    text-align: center;
-    font-size: 3rem;
-    padding-bottom: 40px;
+    padding: var(--padding);
 }
 .service {
     display: flex;
@@ -150,4 +157,36 @@ services
     color: var(--siva);
     font-size: 1.2rem;
     line-height: 1.5;
+}
+/**********************
+portfolio
+**********************/
+.portfolio {
+    padding: var(--padding);
+    background-color: var(--bela);
+}
+.portfolio .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.projectWrapper {
+    flex: 0 0 31%;
+    margin-bottom: 40px;
+}
+.projectWrapper:last-child {
+    margin: auto;
+}
+.projectWrapper img {
+    width: 100%;
+    display: block;
+}
+.projectWrapper .text {
+    background: var(--bg);
+    text-align: center;
+    padding: 20px;
+}
+.projectWrapper h4 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
 }

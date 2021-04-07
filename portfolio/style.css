@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat%7CSource+Code+Pro');
+:root {
+    --crvena: #ad374f;
+    --plava: #3765ad;
+    --bg: #f1f3fa;
+    --font: #333;
+    --transition: .3s ease;
+    --bodyFont: 'Montserrat', sans-serif;
+    --fontSize: 16px;
+    --headings: 'Source Code Pro', monospace;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: var(--bodyFont);
+    line-height: 20px;
+    font-size: var(--fontSize);
+    color: var(--font);
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--headings);
+    color: var(--crvena);
+}
+ul {
+    list-style: none;
+}
+/**********************
+nav
+**********************/
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 100px;
+    position: fixed;
+    width: 100%;
+}
+.logo, .nav-link, a {
+    color: var(--font);
+    text-transform: uppercase;
+}
+.logo {
+    font-size: 1.5rem;
+}
+.logo span {
+    color: var(--crvena);
+}
+.topnav {
+    display: flex;
+    font-size: 1.2rem;
+}
+.topnav .nav-link {
+    padding-left: 20px;
+    text-decoration: none;
+    transition: var(--transtition);
+}
+.topnav .nav-link:hover {
+    color: var(--crvena);
+}
+
+
+/**********************
+header
+**********************/
+header {
+    background-image: linear-gradient(rgba(255,255,255,.9), rgba(255,255,255,.6)), url(img/header.jpg);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+.wrapper img {
+    width: 60%;
+    border-radius: 50%;
+    box-shadow: 0 0 40px var(--font);
+}
+.wrapper h1 {
+    color: var(--plava);
+    font-size: 3rem;
+    letter-spacing: 2px;
+    margin-top: 40px;
+    text-shadow: 3px 3px 3px var(--crvena);
+}

@@ -135,6 +135,7 @@ services
 .service {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
 }
 .service div {
     flex: 1;
@@ -230,6 +231,7 @@ footer {
 footer .container {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 footer .container div:nth-child(1){
     flex: 0 0 55%;
@@ -253,4 +255,48 @@ footer h3 {
     font-size: 1.8rem;
     margin-bottom: 20px;
     text-shadow: 0 0 2px black;
+}
+
+/**********************
+responsive
+**********************/
+@media(max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+    .wrapper h1 {
+        font-size: 2rem;
+        line-height: 1.3;
+    }
+    h2 {
+        font-size: 2rem;
+        line-height: 1.2;
+    }
+    header {
+        height: 90vh;
+    }
+    .service:nth-child(odd) .img {
+        order: 1;
+    }
+    .service:nth-child(odd) .text {
+        order: 2;
+        text-align: center;
+    }
+    .service div {
+        text-align: center;
+    }
+    .projectWrapper {
+        flex: 0 0 100%;
+    }
+    form {
+        width: 90%;
+    }
+    input {
+        flex: 0 0 100%;
+    }
+    footer .container div:nth-child(1),
+    footer .container div:nth-child(2),
+    footer .container div:nth-child(3) {
+        flex: 0 0 100%;
+    }
 }

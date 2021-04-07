@@ -216,8 +216,41 @@ textarea {
 }
 #kontakt .btn {
     flex: 0 0 100%;
-    background-color: var(--plava);
 }
-#kontakt .btn:hover {
-    background-color: var(--crvena);
+
+/**********************
+footer
+**********************/
+footer {
+    background-color: var(--plava);
+    padding: var(--padding);
+    color: var(--bela);
+    line-height: 2;
+}
+footer .container {
+    display: flex;
+    justify-content: space-between;
+}
+footer .container div:nth-child(1){
+    flex: 0 0 55%;
+}
+footer .container div:nth-child(2){
+    flex: 0 0 20%;
+}
+footer .container div:nth-child(3){
+    flex: 0 0 20%;
+}
+footer .container ul li a {
+    color: var(--bela);
+    text-decoration: none;
+    line-height: 1.5;
+    transition: var(--transition);
+}
+footer .container ul li a:hover {
+    color: var(--crvena);
+}
+footer h3 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    text-shadow: 0 0 2px black;
 }

@@ -55,7 +55,7 @@ nav
 .navbar {
     display: flex;
     justify-content: space-between;
-    padding: 15px 100px;
+    padding: 25px 100px;
     position: fixed;
     width: 100%;
 }
@@ -80,6 +80,12 @@ nav
 }
 .topnav .nav-link:hover {
     color: var(--crvena);
+}
+.sticky {
+    background: var(--bela);
+    box-shadow: 0 2px 10px 5px rgba(0,0,0,.1);
+    transition: 1s ease;
+    padding: 15px 100px;
 }
 /**********************
 header

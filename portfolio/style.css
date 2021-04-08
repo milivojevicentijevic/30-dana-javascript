@@ -100,6 +100,9 @@ nav
     transition: 1s ease;
     padding: 15px 100px;
 }
+.dropdownLink {
+    display: none;
+}
 /**********************
 header
 **********************/
@@ -298,5 +301,40 @@ responsive
     footer .container div:nth-child(2),
     footer .container div:nth-child(3) {
         flex: 0 0 100%;
+    }
+    .navbar {
+        padding: 25px;
+    }
+    ul.topnav li a.nav-link {
+        display: none;
+    }
+    ul.topnav li.dropdownLink {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 25px;
+    }
+    ul.topnav li.dropdownLink a {
+        text-decoration: none;
+    }
+    ul.topnav.responsive li.dropdownLink {
+        position: absolute;
+        top: 20px;
+        right: 25px;
+    }
+    ul.topnav.responsive {
+        flex-direction: column;
+        text-align: right;
+        background-color: var(--bela);
+        padding: 20px;
+    }
+    ul.topnav.responsive li a.nav-link {
+        display: block;
+        line-height: 2;
+    }
+    ul.topnav.responsive li {
+        position: relative;
+        top: 15px;
+        right: 25px;
     }
 }
